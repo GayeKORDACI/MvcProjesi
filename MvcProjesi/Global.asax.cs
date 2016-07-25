@@ -58,7 +58,7 @@ namespace MvcProjesi
                 int uyeAdet = (from i in db.Uyes select i).Count();
 
                 //Veritabanına, sürekli aynı makalelerin ve yorumların eklenmemesi için
-                //en az 5 adet makale ve yorum var mı diye kontrol ediyoruz.
+                //en az 5 adet makale ve yorum var mı diye kontrol ediyoruzz
                 //Ayrıca sistemde en az 1 üye olduğunu da onaylıyoruz.
                 if (makaleAdet < 5 || yorumAdet < 5 || uyeAdet < 1)
                 {
